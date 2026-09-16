@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/not-logged/header/header';
-import { Login } from './components/not-logged/sign-up/sign-up';
+import { SignUp } from './components/not-logged/sign-up/sign-up';
+import { Login } from './pages/not-logged/home/login';
 
 @Component({
-  imports: [RouterOutlet, Header, Login],
+  imports: [RouterOutlet, Header, SignUp, Login],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   imports: [],
-  selector: 'app-sing-up',
-  styleUrl: './sing-up.css',
-  templateUrl: './sing-up.html',
+  selector: 'app-sign-up',
+  styleUrl: './sign-up.css',
+  templateUrl: './sign-up.html',
 })
-export class SingUp {}
+export class SignUp {}
