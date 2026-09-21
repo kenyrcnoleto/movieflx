@@ -1,0 +1,27 @@
+#login-page {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* preciso deixar a mesma com opacidade de 0.5 */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  opacity: 0.3;
+  position: relative;
+
+}
+
+#login-page-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}

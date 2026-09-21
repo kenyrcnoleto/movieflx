@@ -1,0 +1,21 @@
+#header {
+  /* display: flex;
+  justify-content: center; */
+  height: 100px;
+  padding-left: 5%;
+  /* align-items: center;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center; */
+}
+
+.logo {
+  color: #E50914;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
