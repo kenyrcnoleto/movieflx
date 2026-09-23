@@ -1,1 +1,42 @@
-<p>sign-in works! Login</p>
+<section id="sign-in-container" class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6">
+      <div class="sign-in-panel">
+        <h1>Entre na sua conta</h1>
+
+        <form class="sign-in-form">
+          <div class="mb-3">
+            <label class="visually-hidden" for="email-or-phone">E-mail ou número de telefone</label>
+            <input
+              class="form-control"
+              id="email-or-phone"
+              name="emailOrPhone"
+              placeholder="E-mail ou número de telefone"
+              type="text"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="visually-hidden" for="password">Sua senha</label>
+            <input
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Sua senha"
+              type="password"
+            />
+          </div>
+
+          <button class="btn w-100" type="submit">Entrar na conta</button>
+        </form>
+
+        <a class="forgot-password" href="#">Esqueci minha senha</a>
+
+        <p class="sign-up-prompt">
+          Novo por aqui?
+          <a routerLink="/cadastre-se">Assine agora</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
