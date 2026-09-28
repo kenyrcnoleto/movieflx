@@ -1,1 +1,21 @@
-<p>header works!</p>
+<header class="header">
+  <a class="logo" href="/" aria-label="MovieFlix - início">
+    <img ngSrc="/images/logo.png" width="180" height="48" alt="MovieFlix" priority />
+  </a>
+
+  <nav class="navigation" aria-label="Navegação principal">
+    <a href="/">Início</a>
+    <a href="/series">Séries</a>
+    <a href="/filmes">Filmes</a>
+    <a href="/originais">Originais</a>
+    <a href="/novidades">Novidades</a>
+  </nav>
+
+  <form class="search" role="search">
+    <label class="visually-hidden" for="movie-search">Buscar filmes e séries</label>
+    <input id="movie-search" type="search" placeholder="Search" />
+    <span class="search-icon" aria-hidden="true"></span>
+  </form>
+
+  <img class="profile-avatar" src="/images/profile.jpeg" width="40" height="40" alt="Perfil" />
+</header>
