@@ -12,6 +12,15 @@ describe('Card', () => {
 
     fixture = TestBed.createComponent(Card);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('movie', {
+      title: 'Filme de teste',
+      description: 'Descricao do filme.',
+      duration: '1h30',
+      ageRating: 'Somente +18',
+      approval: '67%',
+      platform: 'NETFLIX',
+      isTopTen: true,
+    });
     await fixture.whenStable();
   });
 

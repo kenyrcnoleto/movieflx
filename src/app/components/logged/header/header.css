@@ -42,6 +42,7 @@
 .navigation a:focus-visible,
 .logo:focus-visible,
 .search input:focus-visible {
+  background-color: #444;
   outline: 2px solid #e50914;
   outline-offset: 4px;
 }
@@ -78,7 +79,7 @@
 }
 
 .search input::placeholder {
-  color: #777;
+  color: #779;
 }
 
 .search-icon {

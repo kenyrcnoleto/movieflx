@@ -1,7 +1,8 @@
 <app-header />
-<p>home works!</p>
-<div>
-  <app-card />
-  <app-card />
-  <app-card />
-</div>
+<main class="catalog" aria-label="Catálogo de filmes">
+  <div class="movie-grid">
+    @for (movie of movies; track movie.title) {
+      <app-card [movie]="movie" />
+    }
+  </div>
+</main>
