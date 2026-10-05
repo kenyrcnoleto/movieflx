@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 
 export interface MovieCardData {
   title: string;
@@ -18,4 +18,7 @@ export interface MovieCardData {
 })
 export class Card {
   readonly movie = input.required<MovieCardData>();
+  readonly approvalIsHigh = computed(
+    () => Number.parseFloat(this.movie().approval) > 50,
+  );
 }

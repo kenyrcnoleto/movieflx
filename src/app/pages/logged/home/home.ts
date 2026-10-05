@@ -60,7 +60,7 @@ export class Home {
       description: 'Paul Atreides lidera uma rebelião contra o Imperador, buscando vingança e equilíbrio para o destino do universo.',
       duration: '1h30',
       ageRating: 'Somente +18',
-      approval: '67%',
+      approval: '47%',
       platform: 'Apple TV+',
       isTopTen: false,
     },

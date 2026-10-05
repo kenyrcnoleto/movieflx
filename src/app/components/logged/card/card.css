@@ -48,7 +48,15 @@ h2 {
 	text-overflow: ellipsis;
 }
 
-.metadata span::before {
+.approval-high {
+	color: #65d98a;
+}
+
+.approval-low {
+	color: #ff7777;
+}
+
+/* .metadata span::before {
 	display: inline-block;
 	width: 6px;
 	height: 6px;
@@ -57,7 +65,7 @@ h2 {
 	border-radius: 50%;
 	content: '';
 	vertical-align: 1px;
-}
+} */
 
 .metadata span:last-child::before {
 	border: 0;

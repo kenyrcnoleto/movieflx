@@ -27,4 +27,22 @@ describe('Card', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should show high approval in green', () => {
+    const approval = fixture.nativeElement.querySelector('.approval-high');
+
+    expect(approval.textContent).toContain('67%');
+  });
+
+  it('should show approval at 50% in red', async () => {
+    fixture.componentRef.setInput('movie', {
+      ...component.movie(),
+      approval: '50%',
+    });
+    await fixture.whenStable();
+
+    const approval = fixture.nativeElement.querySelector('.approval-low');
+
+    expect(approval.textContent).toContain('50%');
+  });
 });

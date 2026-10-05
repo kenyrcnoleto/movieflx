@@ -7,9 +7,13 @@
 	<p class="description">{{ movie().description }}</p>
 
 	<div class="metadata" aria-label="Informações do filme">
-		<span>{{ movie().duration }}</span>
-		<span>{{ movie().ageRating }}</span>
-		<span>{{ movie().approval }} aprovação</span>
+		<span>⏰{{ movie().duration }}</span>
+		<span>🔞{{ movie().ageRating }}</span>
+		<span
+			[class.approval-high]="approvalIsHigh()"
+			[class.approval-low]="!approvalIsHigh()"
+			>👍{{ movie().approval }} aprovação</span
+		>
 	</div>
 
 	<span class="platform">{{ movie().platform }}</span>
