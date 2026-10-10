@@ -1,0 +1,99 @@
+<main class="movie-page">
+  <a class="brand" href="/" aria-label="MovieFlix - início">
+    <img
+      ngSrc="/images/logo.png"
+      width="680"
+      height="187"
+      alt="MovieFlix"
+      priority
+    />
+  </a>
+
+  <section class="movie-card" aria-labelledby="movie-form-title">
+    <h1 id="movie-form-title">Cadastre seu filme aqui</h1>
+
+    <form class="movie-form">
+      <div class="field">
+        <label class="visually-hidden" for="movie-title">Nome do filme</label>
+        <input
+          id="movie-title"
+          name="title"
+          type="text"
+          placeholder="Nome do filme"
+          autocomplete="off"
+          required
+        />
+      </div>
+
+      <div class="field">
+        <label class="visually-hidden" for="movie-description">Descrição do filme</label>
+        <input
+          id="movie-description"
+          name="description"
+          type="text"
+          placeholder="Descrição do filme"
+          autocomplete="off"
+          required
+        />
+      </div>
+
+      <div class="field field-with-icon">
+        <label class="visually-hidden" for="release-date">Data de lançamento</label>
+        <span class="date-placeholder" aria-hidden="true">Data de lançamento</span>
+        <input id="release-date" name="releaseDate" type="date" required />
+        <svg class="field-icon calendar-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 2v4m10-4v4M4 9h16M5 4h14a1 1 0 0 1 1 1v15H4V5a1 1 0 0 1 1-1Z" />
+          <path d="M8 13h2v2H8z" />
+        </svg>
+      </div>
+
+      <div class="field field-with-icon">
+        <label class="visually-hidden" for="movie-rating">Avaliação geral</label>
+        <input
+          id="movie-rating"
+          name="rating"
+          type="number"
+          min="0"
+          max="10"
+          step="0.1"
+          placeholder="Avaliação geral"
+          required
+        />
+        <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m12 2.8 2.8 5.7 6.3.9-4.5 4.4 1.1 6.3-5.7-3-5.7 3 1.1-6.3-4.5-4.4 6.3-.9L12 2.8Z" />
+        </svg>
+      </div>
+
+      <div class="field field-with-icon">
+        <label class="visually-hidden" for="movie-availability">Onde está disponível?</label>
+        <select id="movie-availability" name="availability" required>
+          <option value="" disabled selected>Onde está disponível?</option>
+          <option value="netflix">Netflix</option>
+          <option value="prime-video">Prime Video</option>
+          <option value="disney-plus">Disney+</option>
+          <option value="other">Outro</option>
+        </select>
+        <svg class="field-icon chevron-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
+
+      <div class="field field-with-icon">
+        <label class="visually-hidden" for="movie-category">Qual categoria</label>
+        <select id="movie-category" name="category" required>
+          <option value="" disabled selected>Qual categoria</option>
+          <option value="action">Ação</option>
+          <option value="comedy">Comédia</option>
+          <option value="drama">Drama</option>
+          <option value="science-fiction">Ficção científica</option>
+          <option value="horror">Terror</option>
+        </select>
+        <svg class="field-icon chevron-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
+
+      <button type="submit">Cadastrar filme</button>
+    </form>
+  </section>
+</main>

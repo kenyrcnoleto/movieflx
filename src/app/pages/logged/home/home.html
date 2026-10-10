@@ -1,5 +1,8 @@
 <app-header />
 <main class="catalog" aria-label="Catálogo de filmes">
+  <a href="/novo-filme" class="btn btn-danger">
+    Cadastrar novo filme
+  </a>
   <div class="movie-grid">
     @for (movie of movies; track movie.title) {
       <app-card [movie]="movie" />
