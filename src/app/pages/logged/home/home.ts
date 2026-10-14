@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Header } from '../../../components/logged/header/header';
 import { Card, type MovieCardData } from '../../../components/logged/card/card';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [Header, Card],
+  imports: [Header, Card, RouterLink],
   selector: 'app-home',
   styleUrl: './home.css',
   templateUrl: './home.html',
