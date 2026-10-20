@@ -83,5 +83,14 @@ export class Home {
       platform: 'NETFLIX',
       isTopTen: false,
     },
+    {
+      title: 'Avatar 2',
+      description: 'Jake Sully e Neytiri enfrentam novos desafios em Pandora, explorando a relação entre humanos e Na’vi.',
+      duration: '1h30',
+      ageRating: 'Somente +18',
+      approval: '67%',
+      platform: 'Disney+',
+      isTopTen: false,
+    }
   ];
 }

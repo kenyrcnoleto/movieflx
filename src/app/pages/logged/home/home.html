@@ -3,7 +3,7 @@
   <a routerLink="/novo-filme" routerLinkActive="active" class="btn btn-danger">
     Cadastrar novo filme
   </a>
-  <div class="movie-grid">
+  <div class="movie-grid" style="margin-bottom: 100px;">
     @for (movie of movies; track movie.title) {
       <app-card [movie]="movie" />
     }

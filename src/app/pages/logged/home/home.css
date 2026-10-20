@@ -7,7 +7,7 @@
 .movie-grid {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 20px 28px;
+	gap: 50px 28px;
 	max-width: 1600px;
 	margin: 0 auto;
 }
