@@ -3,13 +3,13 @@
     <img ngSrc="/images/logo.png" width="180" height="48" alt="MovieFlix" priority />
   </a>
 
-  <nav class="navigation" aria-label="Navegação principal">
-    <a routerLink="/">Início</a>
-    <a routerLink="/series">Séries</a>
-    <a routerLink="/filmes">Filmes</a>
-    <a routerLink="/originais">Originais</a>
-    <a routerLink="/novidades">Novidades</a>
-    <a routerLink="/novo-filme" routerLinkActive="active">Cadastrar filme</a>
+  <nav id="main-navigation" class="navigation" [class.is-open]="menuOpen()" aria-label="Navegação principal">
+    <a routerLink="/" (click)="closeMenu()">Início</a>
+    <a routerLink="/series" (click)="closeMenu()">Séries</a>
+    <a routerLink="/filmes" (click)="closeMenu()">Filmes</a>
+    <a routerLink="/originais" (click)="closeMenu()">Originais</a>
+    <a routerLink="/novidades" (click)="closeMenu()">Novidades</a>
+    <a routerLink="/novo-filme" routerLinkActive="active" (click)="closeMenu()">Cadastrar filme</a>
   </nav>
 
   <form class="search" role="search">
@@ -18,5 +18,18 @@
     <span class="search-icon" aria-hidden="true"></span>
   </form>
 
-  <img class="profile-avatar" src="/images/profile.jpeg" width="40" height="40" alt="Perfil" />
+  <img class="profile-avatar" ngSrc="/images/profile.jpeg" width="40" height="40" alt="Perfil" />
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-controls="main-navigation"
+    [attr.aria-expanded]="menuOpen()"
+    [attr.aria-label]="menuOpen() ? 'Fechar menu de navegação' : 'Abrir menu de navegação'"
+    (click)="toggleMenu()"
+  >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </button>
 </header>

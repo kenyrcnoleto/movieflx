@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -8,4 +8,14 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.css',
   templateUrl: './header.html',
 })
-export class Header {}
+export class Header {
+  readonly menuOpen = signal(false);
+
+  toggleMenu(): void {
+    this.menuOpen.update((isOpen) => !isOpen);
+  }
+
+  closeMenu(): void {
+    this.menuOpen.set(false);
+  }
+}
