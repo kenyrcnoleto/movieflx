@@ -219,6 +219,7 @@
   .profile-avatar {
     flex-basis: 36px;
     height: 36px;
+    margin-left: auto;
     width: 36px;
   }
 
